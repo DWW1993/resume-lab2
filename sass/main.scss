@@ -1,2 +1,30 @@
 @import 'variables';
 @import 'globals';
+
+/* .carousel-item img {
+    min-height: 400px !important;
+    max-height: 400px !important;
+    width: 1152px !important;
+    overflow: hidden !important;
+} */
+
+.carousel-item {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel1 {
+    background-image: url("images/carousel/geralt-forest.jpg");
+}
+
+.carousel2 {
+    background-image: url("images/carousel/geralt-field.jpg");
+}
+
+.carousel3 {
+    background-image: url("images/carousel/geralt-sword.jpg");
+}
+
+.carousel4 {
+    background-image: url("images/carousel/geralt-screenshot.jpg");
+}
