@@ -1,16 +1,24 @@
 @import 'variables';
 @import 'globals';
 
-/* .carousel-item img {
-    min-height: 400px !important;
-    max-height: 400px !important;
-    width: 1152px !important;
-    overflow: hidden !important;
-} */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div {
+    border: 1px solid orange;
+}
 
 .carousel-item {
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.carousel-fixed-item {
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
 }
 
 .carousel1 {
@@ -27,4 +35,25 @@
 
 .carousel4 {
     background-image: url("images/carousel/geralt-screenshot.jpg");
+}
+
+.parallax {
+    align-content: left;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.col, .s12, .m6, .l4 {
+    margin: 0;
+    padding: 0 !important;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0;
+}
+
+.mid {
+    max-width: 400px
 }
