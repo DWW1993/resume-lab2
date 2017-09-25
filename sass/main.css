@@ -5,9 +5,9 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
-/* div {
-    border: 1px solid orange;
-} */
+div {
+  border: 1px solid orange; }
+
 .carousel-item {
   background-position: center;
   background-repeat: no-repeat; }
@@ -34,11 +34,16 @@ body {
 
 .row {
   margin: 0;
-  padding: 0 !important;
-  overflow: hidden; }
+  padding: 0; }
 
 .col, .s12, .m6, .l4 {
   margin: 0;
-  padding: 0 !important; }
+  padding: 0 !important;
+  max-width: 400px;
+  max-height: 400px;
+  padding: 0; }
+
+.mid {
+  max-width: 400px; }
 
 /*# sourceMappingURL=main.css.map */
