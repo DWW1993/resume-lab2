@@ -1,0 +1,10 @@
+@mixin background-style {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin padmarg0 {
+    padding: 0;
+    margin: 0!important;
+}

@@ -1,19 +1,35 @@
 @import 'variables';
-@import 'globals';
+@import 'mixins';
+
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box !important;
+    background-color: rgb(248, 232, 212)
 }
 
 /* div {
     border: 1px solid orange;
 } */
 
+.nav-extended {
+    background-color: rgb(248, 232, 212);
+    border: none;
+    box-shadow: none;
+    .nav-wrapper {
+        ul a, .brand-logo {
+            color: $primary-text!important;
+        }
+    }
+}
+
 .carousel-item {
-    background-position: center;
-    background-repeat: no-repeat;
+    @include background-style;
 }
 
 .carousel-fixed-item {
@@ -38,112 +54,90 @@ body {
     background-image: url("images/carousel/geralt-screenshot.jpg");
 }
 
-.aboutcontent h1 {
+.aboutcontent {
+    h1 { 
     margin-top: 0;
     padding-top: 10%;
-}
-
-.aboutcontent .row {
+    }
+    .row {
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.parallax {
-    align-content: left;
+    }
 }
 
 .exp {
     width: 70%;
     margin: 15px auto;
-}
-
-.exp h5 {
-    border-bottom: 3px solid black;
+    h5 {
+        border-bottom: 3px solid black;
+    }
 }
 
 .midimages .row {
-    margin: 0;
-    padding: 0 !important;
-}
-
-.midimages .col, .midimages .s12, .midimages .m6, .midimages .l4 {
-    margin: 0;
-    padding: 0 !important;
-    height: 400px;
-}
-
-.mid {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mid1 {
-    background-image: url("images/middle/middle1.jpg");
-}
-
-.mid2 {
-    background-image: url("images/middle/middle2.jpg");
-    
-}
-
-.mid3 {
-    background-image: url("images/middle/middle3.jpg");
-}
-
-.mid4 {
-    background-image: url("images/middle/middle4.jpg");
-}
-
-.mid5 {
-    background-image: url("images/middle/middle5.jpg");
-}
-
-.mid6 {
-    background-image: url("images/middle/middle6.jpg");
-}
-
-.l4 {
-    max-width: 33.33333%;
-}
-
-.m6 {
-    max-width: 50%;
-}
-
-.s12 {
-    max-width: 100%;
+    @include padmarg0;
+    .col, .s12, .m6, .l4 {
+        @include padmarg0;
+        height: 400px;
+    }
+    .l4 {
+        max-width: 33.33333%;
+    }
+    .m6 {
+        max-width: 50%;
+    }
+    .s12 {
+        max-width: 100%;
+    }
+    .mid {
+        @include background-style;
+    }
+    .mid1 {
+        background-image: url("images/middle/middle1.jpg");
+    }
+    .mid2 {
+        background-image: url("images/middle/middle2.jpg");
+        
+    }
+    .mid3 {
+        background-image: url("images/middle/middle3.jpg");
+    }
+    .mid4 {
+        background-image: url("images/middle/middle4.jpg");
+    }
+    .mid5 {
+        background-image: url("images/middle/middle5.jpg");
+    }
+    .mid6 {
+        background-image: url("images/middle/middle6.jpg");
+    }
 }
 
 input[type=text], select, textarea {
     width: 100%!important;
     padding: 12px 20px!important;
     margin: 8px 0!important;
-    display: inline-block!important;
-    border: 2px solid black!important;
+    display: $primary-display!important;
+    border: $primary-border!important;
     border-radius: 4px!important;
     box-sizing: border-box!important;
+    background-color: $primary-background!important;
 }
 
 label {
-    color: black!important;
+    color: $primary-text!important;
     font-weight: bold;
 }
 
 input[type=submit] {
-    width: 100%!important;
-    color: white!important;
+    width: 30%!important;
+    color: $primary-text!important;
     padding: 14px 20px!important;
     margin: 8px 0!important;
-    border: none!important;
+    margin-left: 34.5%!important;
+    border: $primary-border!important;
     border-radius: 4px!important;
     cursor: pointer!important;
-}
-
-input[type=submit] {
-   width: 30% !important;
-   margin-left: 34.5%!important;
-   background-color: black;
+    background-color: $primary-background;
 }
 
 .form {
@@ -152,12 +146,13 @@ input[type=submit] {
     margin: auto 10%;
 }
 
-ul {
+.va {
+   ul { 
     margin-bottom: 50px;
     text-align: center;
-    border-top: 2px solid black;
-}
-
-li {
-    display: inline-block;
+    border-top: $primary-border;
+   }
+   li {
+    display: $primary-display;
+    }
 }
