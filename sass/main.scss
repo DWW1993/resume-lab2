@@ -4,6 +4,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box !important;
 }
 
 /* div {
@@ -37,17 +38,126 @@ body {
     background-image: url("images/carousel/geralt-screenshot.jpg");
 }
 
+.aboutcontent h1 {
+    margin-top: 0;
+    padding-top: 10%;
+}
+
+.aboutcontent .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .parallax {
     align-content: left;
 }
 
-.row {
-    margin: 0;
-    padding: 0 !important;
-    overflow: hidden;
+.exp {
+    width: 70%;
+    margin: 15px auto;
 }
 
-.col, .s12, .m6, .l4 {
+.exp h5 {
+    border-bottom: 3px solid black;
+}
+
+.midimages .row {
     margin: 0;
     padding: 0 !important;
+}
+
+.midimages .col, .midimages .s12, .midimages .m6, .midimages .l4 {
+    margin: 0;
+    padding: 0 !important;
+    height: 400px;
+}
+
+.mid {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mid1 {
+    background-image: url("images/middle/middle1.jpg");
+}
+
+.mid2 {
+    background-image: url("images/middle/middle2.jpg");
+    
+}
+
+.mid3 {
+    background-image: url("images/middle/middle3.jpg");
+}
+
+.mid4 {
+    background-image: url("images/middle/middle4.jpg");
+}
+
+.mid5 {
+    background-image: url("images/middle/middle5.jpg");
+}
+
+.mid6 {
+    background-image: url("images/middle/middle6.jpg");
+}
+
+.l4 {
+    max-width: 33.33333%;
+}
+
+.m6 {
+    max-width: 50%;
+}
+
+.s12 {
+    max-width: 100%;
+}
+
+input[type=text], select, textarea {
+    width: 100%!important;
+    padding: 12px 20px!important;
+    margin: 8px 0!important;
+    display: inline-block!important;
+    border: 2px solid black!important;
+    border-radius: 4px!important;
+    box-sizing: border-box!important;
+}
+
+label {
+    color: black!important;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    width: 100%!important;
+    color: white!important;
+    padding: 14px 20px!important;
+    margin: 8px 0!important;
+    border: none!important;
+    border-radius: 4px!important;
+    cursor: pointer!important;
+}
+
+input[type=submit] {
+   width: 30% !important;
+   margin-left: 34.5%!important;
+   background-color: black;
+}
+
+.form {
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto 10%;
+}
+
+ul {
+    margin-bottom: 50px;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+li {
+    display: inline-block;
 }
