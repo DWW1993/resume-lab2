@@ -25,6 +25,12 @@ body {
         ul a, .brand-logo {
             color: $primary-text!important;
         }
+        .side-nav {
+            background-color: rgb(248, 232, 212);
+        }
+        .material-icons {
+            @extend .brand-logo;
+        }
     }
 }
 

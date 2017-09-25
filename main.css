@@ -14,8 +14,10 @@ body {
   background-color: #f8e8d4;
   border: none;
   box-shadow: none; }
-  .nav-extended .nav-wrapper ul a, .nav-extended .nav-wrapper .brand-logo {
+  .nav-extended .nav-wrapper ul a, .nav-extended .nav-wrapper .brand-logo, .nav-extended .nav-wrapper .material-icons {
     color: black !important; }
+  .nav-extended .nav-wrapper .side-nav {
+    background-color: #f8e8d4; }
 
 .carousel-item {
   background-position: center;
